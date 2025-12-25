@@ -1,0 +1,51 @@
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+*.log
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# SQL dumps and exports
+*.sql.gz
+*.dump
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python (if using Python with SQL)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.env
+
+# Node modules (if using Node.js with SQL)
+node_modules/
+package-lock.json
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Personal notes (keep private)
+*private*
+*secret*
+notes.txt
