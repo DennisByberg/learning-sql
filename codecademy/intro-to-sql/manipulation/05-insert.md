@@ -17,3 +17,7 @@ VALUES (1, 'Justin Bieber', 29);
   - `1`: an integer that will be added to `id` column
   - `'Justin Bieber'`: text that will be added to `name` column
   - `29`: an integer that will be added to `age` column
+
+---
+
+> This summary is based on material from the [Intro to SQL](https://www.codecademy.com/enrolled/courses/intro-to-sql) course by [Codecademy](https://www.codecademy.com/). Original course content is copyright [Codecademy](https://www.codecademy.com/). This file is for personal learning and reference only.

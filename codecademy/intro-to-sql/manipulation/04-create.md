@@ -17,3 +17,7 @@ CREATE TABLE celebs (
    - `id` is the first column in the table. It stores values of data type `INTEGER`.
    - `name` is the second column in the table. It stores values of data type `TEXT`.
    - `age` is the third column in the table. It stores values of data type `INTEGER`.
+
+---
+
+> This summary is based on material from the [Intro to SQL](https://www.codecademy.com/enrolled/courses/intro-to-sql) course by [Codecademy](https://www.codecademy.com/). Original course content is copyright [Codecademy](https://www.codecademy.com/). This file is for personal learning and reference only.

@@ -26,3 +26,7 @@ All data stored in a relational database is of a certain [data type](https://en.
 - `TEXT`, a text string
 - `DATE`, the date formatted as YYYY-MM-DD
 - `REAL`, a decimal value
+
+---
+
+> This summary is based on material from the [Intro to SQL](https://www.codecademy.com/enrolled/courses/intro-to-sql) course by [Codecademy](https://www.codecademy.com/). Original course content is copyright [Codecademy](https://www.codecademy.com/). This file is for personal learning and reference only.

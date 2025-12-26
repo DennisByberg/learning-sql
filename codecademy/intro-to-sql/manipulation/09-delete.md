@@ -13,3 +13,7 @@ WHERE id = 4;
 - `WHERE id = 4` ensures that only the row with `id` 4 is deleted.
 
 Be careful when using `DELETE` without a `WHERE` clause, as it will remove all rows from the table.
+
+---
+
+> This summary is based on material from the [Intro to SQL](https://www.codecademy.com/enrolled/courses/intro-to-sql) course by [Codecademy](https://www.codecademy.com/). Original course content is copyright [Codecademy](https://www.codecademy.com/). This file is for personal learning and reference only.
