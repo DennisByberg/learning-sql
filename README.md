@@ -1,6 +1,6 @@
 # Learning SQL
 
-Personal notes and exercises from various SQL courses.
+Documentation of my SQL learning journey, including structured notes, practical exercises, and database references.
 
 **Codecademy Profile:** [dennisbyberg](https://www.codecademy.com/profiles/dennisbyberg)
 
