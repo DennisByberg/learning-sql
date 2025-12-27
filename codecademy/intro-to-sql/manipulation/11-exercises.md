@@ -2,7 +2,22 @@
 
 Below are exercises based on what you've learned in the manipulation module. Try to solve each task using SQL statements. No answers are provided—focus on practicing your skills!
 
-## 🏗️ 1. Create a Table
+## 📝 How to Take the Quiz & Generate More Questions
+
+Solve the exercises below, or generate 10 new SQL manipulation questions based on this chapter using a language model (like ChatGPT or Copilot). Tag or copy the chapter text and use the prompt below:
+
+```
+Analyze the following chapter about SQL manipulation and generate 10 practice questions that match its content (CREATE, INSERT, SELECT, UPDATE, ALTER, DELETE, constraints, NULL, DROP). For each question, include:
+- A short description of the task
+- A small table schema required (table name + columns)
+- Difficulty level (easy/medium/hard)
+
+Only provide the questions as a numbered list. Do not include solutions unless I ask for them.
+```
+
+## 📚 Practice Questions
+
+### 1. Create a Table
 
 Create a table called `books` with the following columns:
 
@@ -11,33 +26,33 @@ Create a table called `books` with the following columns:
 - `author` (text)
 - `published_year` (integer)
 
-## ✍️ 2. Insert Data
+### 2. Insert Data
 
 Insert three different books into the `books` table. Each book should have a title, author, and published year.
 
-## 🔎 3. Select Data
+### 3. Select Data
 
 Select all columns from the `books` table.
 
 Select only the `title` and `author` columns from the `books` table.
 
-## 📝 4. Update Data
+### 4. Update Data
 
 Update the `author` of one book in the `books` table to a new name.
 
-## ➕ 5. Add a Column
+### 5. Add a Column
 
 Add a new column called `genre` (text) to the `books` table.
 
-## 🆕 6. Insert Data with New Column
+### 6. Insert Data with New Column
 
 Insert a new book into the `books` table, including a value for the `genre` column.
 
-## 🗑️ 7. Delete Data
+### 7. Delete Data
 
 Delete a book from the `books` table where the `id` is 2.
 
-## 🚦 8. Constraints
+### 8. Constraints
 
 Create a table called `users` with the following constraints:
 
@@ -45,10 +60,10 @@ Create a table called `users` with the following constraints:
 - `username` (text, unique, not null)
 - `email` (text, not null)
 
-## 🚫 9. NULL Values
+### 9. NULL Values
 
 Insert a book into the `books` table without specifying the `genre` column. What value will be stored in `genre`?
 
-## 🧹 10. Drop Table
+### 10. Drop Table
 
 Remove the `books` table from the database.
