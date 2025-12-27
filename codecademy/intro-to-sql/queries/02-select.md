@@ -12,3 +12,7 @@ FROM table_name;
 To make it easier to read, we moved `FROM` to another line.
 
 Line breaks don’t mean anything specific in SQL. We could write this entire query in one line, and it would run just fine.
+
+---
+
+> This summary is based on material from the [Intro to SQL](https://www.codecademy.com/enrolled/courses/intro-to-sql) course by [Codecademy](https://www.codecademy.com/). Original course content is copyright [Codecademy](https://www.codecademy.com/). This file is for personal learning and reference only.
