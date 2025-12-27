@@ -4,9 +4,11 @@ Documentation of my SQL learning journey, including structured notes, practical 
 
 **Codecademy Profile:** [dennisbyberg](https://www.codecademy.com/profiles/dennisbyberg)
 
-## 🗂️ Databases Used
+## 🗂️ Databases & Tools Used
 
 **SQLite:** [Official Docs](https://www.sqlite.org/docs.html) | [Cheat Sheet](https://www.sqlitetutorial.net/sqlite-cheat-sheet/)
+
+**DataGrip:** Used as the main SQL editor and database management tool. [Official Site](https://www.jetbrains.com/datagrip/)
 
 ## 📚 [Codecademy](https://www.codecademy.com/)
 
