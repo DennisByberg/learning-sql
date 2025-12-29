@@ -8,7 +8,70 @@ Documentation of my SQL learning journey, including structured notes, practical 
 
 **SQLite:** [Official Docs](https://www.sqlite.org/docs.html) | [Cheat Sheet](https://www.sqlitetutorial.net/sqlite-cheat-sheet/)
 
+**MySQL:** [Official Docs](https://dev.mysql.com/doc/) | [Cheat Sheet](https://www.mysqltutorial.org/mysql-cheat-sheet.aspx)
+
+**PostgreSQL:** [Official Docs](https://www.postgresql.org/docs/) | [Cheat Sheet](https://www.postgresqltutorial.com/postgresql-cheat-sheet/)
+
+**MSSQL (SQL Server):** [Official Docs](https://learn.microsoft.com/en-us/sql/) | [Cheat Sheet](https://www.sqlservertutorial.net/sql-server-cheat-sheet/)
+
 **DataGrip:** Used as the main SQL editor and database management tool. [Official Site](https://www.jetbrains.com/datagrip/)
+
+## 🐳 Docker Setup
+
+To practice with multiple database syntaxes, use Docker to run local database instances:
+
+**Start all databases:**
+
+```bash
+# MySQL
+docker run -d \
+  --name learning-mysql \
+  -e MYSQL_ROOT_PASSWORD=password \
+  -e MYSQL_DATABASE=learning \
+  -p 3306:3306 \
+  mysql:8.0
+
+# PostgreSQL
+docker run -d \
+  --name learning-postgres \
+  -e POSTGRES_PASSWORD=password \
+  -e POSTGRES_DB=learning \
+  -p 5432:5432 \
+  postgres:16
+
+# MSSQL (SQL Server)
+docker run -d \
+  --name learning-mssql \
+  -e "ACCEPT_EULA=Y" \
+  -e "MSSQL_SA_PASSWORD=Password123!" \
+  -p 1433:1433 \
+  mcr.microsoft.com/mssql/server:2022-latest
+```
+
+**Connection details for DataGrip:**
+
+| Database   | Host      | Port | User     | Password     | Database |
+| ---------- | --------- | ---- | -------- | ------------ | -------- |
+| MySQL      | localhost | 3306 | root     | password     | learning |
+| PostgreSQL | localhost | 5432 | postgres | password     | learning |
+| MSSQL      | localhost | 1433 | sa       | Password123! | master   |
+| SQLite     | —         | —    | —        | —            | (file)   |
+
+**Useful commands:**
+
+```bash
+# Check running containers
+docker ps
+
+# Stop all learning databases
+docker stop learning-mysql learning-postgres learning-mssql
+
+# Start all learning databases
+docker start learning-mysql learning-postgres learning-mssql
+
+# Remove containers (data will be lost)
+docker rm -f learning-mysql learning-postgres learning-mssql
+```
 
 ## 📚 [Codecademy](https://www.codecademy.com/)
 
