@@ -1,9 +1,9 @@
--- 1. Create a Table
+-- 1. Create Tables
 -- Create a table called `books` with the following columns:
--- - id (INT, primary key, IDENTITY)
--- - title (VARCHAR(255), not null)
--- - author (VARCHAR(255))
--- - published_year (INT)
+-- - id (primary key, auto increment)
+-- - title (not null)
+-- - author
+-- - published_year
 CREATE TABLE books (
     id INT IDENTITY(1,1) PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
