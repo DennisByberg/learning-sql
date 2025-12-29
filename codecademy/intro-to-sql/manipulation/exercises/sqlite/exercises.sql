@@ -1,9 +1,9 @@
--- 1. Create a Table
+-- 1. Create Tables
 -- Create a table called `books` with the following columns:
--- - id (integer, primary key, auto increment)
--- - title (text, not null)
--- - author (text)
--- - published_year (integer)
+-- - id (primary key, auto increment)
+-- - title (not null)
+-- - author
+-- - published_year
 CREATE TABLE books (
     id INTEGER PRIMARY KEY,
     title TEXT NOT NULL,
@@ -16,9 +16,9 @@ CREATE TABLE books (
 -- Each book should have a title, author, and published year.
 INSERT INTO books (title, author, published_year)
 VALUES
-    ('The Great Gatsby', 'F. Scott Fitzgerald', 1925),
-    ('1984', 'George Orwell', 1949),
-    ('To Kill a Mockingbird', 'Harper Lee', 1960);
+('The Great Gatsby', 'F. Scott Fitzgerald', 1925),
+('1984', 'George Orwell', 1949),
+('To Kill a Mockingbird', 'Harper Lee', 1960);
 
 -- 3. Select Data
 -- Select all columns from the `books` table.
