@@ -18,34 +18,18 @@ Documentation of my SQL learning journey, including structured notes, practical 
 
 ## 🐳 Docker Setup
 
-To practice with multiple database syntaxes, use Docker to run local database instances:
+To practice with multiple database syntaxes, use Docker Compose to run local database instances.
+
+**Database versions:**
+
+- MySQL: 9.5.0
+- PostgreSQL: 18.1
+- MSSQL: 2025 (Preview)
 
 **Start all databases:**
 
 ```bash
-# MySQL
-docker run -d \
-  --name learning-mysql \
-  -e MYSQL_ROOT_PASSWORD=password \
-  -e MYSQL_DATABASE=learning \
-  -p 3306:3306 \
-  mysql:8.0
-
-# PostgreSQL
-docker run -d \
-  --name learning-postgres \
-  -e POSTGRES_PASSWORD=password \
-  -e POSTGRES_DB=learning \
-  -p 5432:5432 \
-  postgres:18.1
-
-# MSSQL (SQL Server)
-docker run -d \
-  --name learning-mssql \
-  -e "ACCEPT_EULA=Y" \
-  -e "MSSQL_SA_PASSWORD=Password123!" \
-  -p 1433:1433 \
-  mcr.microsoft.com/mssql/server:2022-latest
+docker-compose up -d
 ```
 
 **Connection details for DataGrip:**
@@ -57,49 +41,17 @@ docker run -d \
 | MSSQL      | localhost | 1433 | sa       | Password123! | master   |
 | SQLite     | —         | —    | —        | —            | (file)   |
 
-**Useful commands:**
+## 📚 Course Notes
 
-```bash
-# Check running containers
-docker ps
+### [Codecademy](codecademy/)
 
-# Stop all learning databases
-docker stop learning-mysql learning-postgres learning-mssql
+Structured notes and exercises from Codecademy courses.
 
-# Start all learning databases
-docker start learning-mysql learning-postgres learning-mssql
+**Courses:**
 
-# Remove containers (data will be lost)
-docker rm -f learning-mysql learning-postgres learning-mssql
-```
+- [Introduction to SQL](codecademy/intro-to-sql/) - SQL fundamentals including manipulation and queries
 
-## 📚 [Codecademy](https://www.codecademy.com/)
-
-### [Introduction to SQL](codecademy/intro-to-sql/)
-
-**Course Link:** https://www.codecademy.com/enrolled/courses/intro-to-sql
-
-#### [Manipulation](codecademy/intro-to-sql/manipulation/)
-
-| #   | Topic                                                                                   | Description                            |
-| --- | --------------------------------------------------------------------------------------- | -------------------------------------- |
-| 01  | [Introduction to SQL](codecademy/intro-to-sql/manipulation/01-introduction-to-sql.md)   | Overview of SQL and RDBMS              |
-| 02  | [Relational Databases](codecademy/intro-to-sql/manipulation/02-relational-databases.md) | Tables, rows, columns, and data types  |
-| 03  | [Statements](codecademy/intro-to-sql/manipulation/03-statements.md)                     | SQL statement structure and components |
-| 04  | [Create](codecademy/intro-to-sql/manipulation/04-create.md)                             | Creating tables and defining schemas   |
-| 05  | [Insert](codecademy/intro-to-sql/manipulation/05-insert.md)                             | Adding new rows to tables              |
-| 06  | [Select](codecademy/intro-to-sql/manipulation/06-select.md)                             | Querying and retrieving data           |
-| 07  | [Alter](codecademy/intro-to-sql/manipulation/07-alter.md)                               | Modifying table structures             |
-| 08  | [Update](codecademy/intro-to-sql/manipulation/08-update.md)                             | Changing existing data                 |
-| 09  | [Delete](codecademy/intro-to-sql/manipulation/09-delete.md)                             | Removing data from tables              |
-| 10  | [Constraints](codecademy/intro-to-sql/manipulation/10-constraints.md)                   | Data integrity rules and validation    |
-| 11  | [Exercises](codecademy/intro-to-sql/manipulation/11-exercises.md)                       | Practice problems and solutions        |
-
-#### [Queries](codecademy/intro-to-sql/queries/)
-
-| #   | Topic                                                              | Description                               |
-| --- | ------------------------------------------------------------------ | ----------------------------------------- |
-| 01  | [Introduction](codecademy/intro-to-sql/queries/01-introduction.md) | Querying a single table, intro to queries |
+For detailed course structure and topics, see [codecademy/README.md](codecademy/README.md).
 
 ## 📄 License
 
