@@ -49,7 +49,7 @@ Structured notes and exercises from Codecademy courses.
 
 **Courses:**
 
-- [Introduction to SQL](codecademy/intro-to-sql/) - SQL fundamentals including manipulation and queries
+- [Learn SQL](codecademy/learn-sql/) - SQL fundamentals including manipulation and queries
 
 For detailed course structure and topics, see [codecademy/README.md](codecademy/README.md).
 

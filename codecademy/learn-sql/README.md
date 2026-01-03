@@ -1,8 +1,8 @@
-# Introduction to SQL
+# Learn SQL
 
-Course notes and exercises from Codecademy's Introduction to SQL course.
+Course notes and exercises from Codecademy's Learn SQL course.
 
-**Course Link:** https://www.codecademy.com/enrolled/courses/intro-to-sql
+**Course Link:** https://www.codecademy.com/enrolled/courses/learn-sql
 
 ## [Manipulation](manipulation/)
 
