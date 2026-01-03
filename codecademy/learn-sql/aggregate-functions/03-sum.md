@@ -1,0 +1,18 @@
+# Sum
+
+SQL makes it easy to add all values in a particular column using `SUM()`.
+
+`SUM()` is a function that takes the name of a column as an argument and returns the sum of all the values in that column.
+
+What is the total number of downloads for all of the apps combined?
+
+```sql
+SELECT SUM(downloads)
+FROM fake_apps;
+```
+
+This adds all values in the `downloads` column.
+
+---
+
+> This summary is based on material from the [Learn SQL](https://www.codecademy.com/enrolled/courses/learn-sql) course by [Codecademy](https://www.codecademy.com/). Original course content is copyright [Codecademy](https://www.codecademy.com/). This file is for personal learning and reference only.

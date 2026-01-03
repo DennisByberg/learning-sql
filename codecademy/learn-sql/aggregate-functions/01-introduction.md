@@ -1,6 +1,4 @@
-# AGGREGATE FUNCTIONS
-
-## Introduction
+# Introduction
 
 SQL Queries don’t just access raw data, they can also perform calculations on the raw data to answer specific data questions.
 
