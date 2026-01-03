@@ -37,7 +37,7 @@ docker run -d \
   -e POSTGRES_PASSWORD=password \
   -e POSTGRES_DB=learning \
   -p 5432:5432 \
-  postgres:16
+  postgres:18.1
 
 # MSSQL (SQL Server)
 docker run -d \
