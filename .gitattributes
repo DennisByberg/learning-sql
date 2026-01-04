@@ -1,0 +1,5 @@
+# .gitattributes
+*.sql linguist-detectable=true
+*.sql linguist-language=SQL
+*.sql -linguist-documentation
+*.sql -linguist-vendored
