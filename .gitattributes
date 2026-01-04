@@ -8,3 +8,8 @@
 *.yml linguist-detectable=true
 *.yml -linguist-documentation
 *.yml -linguist-vendored
+
+*.yaml linguist-language=YAML
+*.yaml linguist-detectable=true
+*.yaml -linguist-documentation
+*.yaml -linguist-vendored
