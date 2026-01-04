@@ -1,36 +1,80 @@
-
 -- 1. (Easy)
--- Count the total number of apps in the table.
+-- How many movies exist in the movies table?
+SELECT COUNT(*)
+FROM movies;
 
 -- 2. (Easy)
--- Find the total number of downloads for all apps.
+-- Calculate the total revenue across all movies.
+SELECT SUM(revenue)
+FROM movies;
 
 -- 3. (Easy)
--- What is the highest and lowest rating among all apps?
+-- Find the highest and lowest budget among all movies.
+SELECT MAX(budget) AS max_budget,
+       MIN(budget) AS min_budget
+FROM movies;
 
 -- 4. (Easy)
--- Calculate the average price of all apps.
+-- What is the average rating of all movies? Round to 2 decimals.
+SELECT ROUND(AVG(rating), 2) AS average_rating
+FROM movies;
 
 -- 5. (Easy)
--- Round the average rating of all apps to 1 decimal place.
+-- Show the mean budget rounded to 1 decimal place.
+SELECT ROUND(AVG(budget),1)
+FROM movies;
 
 -- 6. (Medium)
--- Count the number of apps in each category.
+-- Display each genre with its movie count.
+SELECT genre,
+       COUNT(*) AS movie_count
+FROM movies
+GROUP BY genre;
 
 -- 7. (Medium)
--- Find the total downloads for each category, sorted by downloads descending.
+-- Group movies by genre and show total revenue per genre in descending order.
+SELECT genre,
+       SUM(revenue) AS total_revenue
+FROM movies
+GROUP BY genre
+ORDER BY total_revenue DESC;
 
 -- 8. (Medium)
--- Show the average rating for each category, but only include categories with more than 2 apps.
+-- Calculate average rating per genre, filtering out genres with 2 or fewer movies.
+SELECT genre,
+       AVG(rating) AS average_rating
+FROM movies
+GROUP BY genre
+HAVING COUNT(*) >= 2;
 
 -- 9. (Medium)
--- For each category, show the number of active apps (is_active = 1).
+-- How many released movies (is_released = 1) are there in each genre?
+SELECT genre,
+       SUM(IIF(is_released = 1, 1, 0)) AS released_movies
+FROM movies
+GROUP BY genre;
 
 -- 10. (Hard)
--- For each price (rounded to nearest integer), count how many apps have that price.
+-- Group movies by their budget (rounded to whole number) and count movies in each budget range.
+SELECT ROUND(budget, 0) AS rounded_budget,
+       COUNT(*) AS movie_count
+FROM movies
+GROUP BY ROUND(budget, 0)
+ORDER BY rounded_budget;
 
 -- 11. (Hard)
--- Show all categories where the total downloads is greater than 5000.
+-- Which genres have earned more than 150000 in total revenue?
+SELECT genre,
+       SUM(revenue) AS total_revenue
+FROM movies
+GROUP BY genre
+HAVING SUM(revenue) > 150000
 
 -- 12. (Hard)
--- For each category, show the minimum and maximum rating, but only for categories with at least one active app.
+-- Display min and max ratings per genre, excluding genres without any released movies.
+SELECT genre,
+       MIN(rating) AS min_rating,
+       MAX(rating) AS max_rating
+FROM movies
+GROUP BY genre
+HAVING SUM(IIF(is_released = 1, 1, 0)) > 0
