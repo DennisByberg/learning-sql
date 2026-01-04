@@ -1,4 +1,4 @@
-# .gitattributes
+# ============ Language Detection ============
 *.sql linguist-detectable=true
 *.sql linguist-language=SQL
 *.sql -linguist-documentation
@@ -13,3 +13,38 @@
 *.yaml linguist-detectable=true
 *.yaml -linguist-documentation
 *.yaml -linguist-vendored
+
+# ============ Line Endings ============
+* text=auto
+*.cs text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sql text eol=lf
+*.sh text eol=lf
+
+*.csproj text eol=lf
+*.sln text eol=crlf
+
+# ============ Binary Files ============
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.dll binary
+*.exe binary
+*.so binary
+*.dylib binary
+
+# ============ Generated/Vendor Files ============
+package-lock.json -diff
+yarn.lock -diff
+*.min.js -diff
+*.min.css -diff
